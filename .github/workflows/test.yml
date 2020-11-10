@@ -1,0 +1,10 @@
+name: Build Reload Package
+on: workflow_dispatch
+
+jobs:
+  test:
+    name: Test
+    runs-on: [self-hosted, linux, custom-label]
+    steps:
+      - name: step 1
+        run: echo 1
